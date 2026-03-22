@@ -20,4 +20,4 @@ Each folder represents a topic or exercise from my studies.
 
 Become a better developer by practicing consistently and building real projects.
 
-💡 This is just the beginning.
+💡 This is just the beginning. kakakakaka
