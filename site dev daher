@@ -1,0 +1,153 @@
+export default function DevDaherSite() {
+  const techs = ["Python", "Backend", "FastAPI", "HTML", "CSS", "JavaScript", "Git", "GitHub"];
+  const projetos = [
+    {
+      titulo: "Exercícios em Python",
+      desc: "Coleção de exercícios práticos para reforçar lógica de programação e fundamentos.",
+      status: "Em evolução"
+    },
+    {
+      titulo: "Meu site pessoal",
+      desc: "Landing page para apresentar meu perfil, minhas habilidades e meus projetos.",
+      status: "Em construção"
+    },
+    {
+      titulo: "Próximo projeto backend",
+      desc: "API simples para praticar rotas, validação de dados e organização de código.",
+      status: "Próximo passo"
+    }
+  ];
+
+  return (
+    <main className="min-h-screen bg-zinc-950 text-zinc-100">
+      <section className="mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-6 py-16">
+        <div className="mb-6 inline-flex w-fit items-center rounded-full border border-zinc-800 bg-zinc-900 px-4 py-2 text-sm text-zinc-300 shadow-sm">
+          Dev em formação • foco em backend
+        </div>
+
+        <div className="grid items-center gap-12 md:grid-cols-2">
+          <div>
+            <h1 className="text-4xl font-bold leading-tight md:text-6xl">
+              Ângelo Daher
+            </h1>
+            <p className="mt-4 max-w-xl text-lg text-zinc-400 md:text-xl">
+              Estou construindo minha carreira como desenvolvedor, estudando backend,
+              criando projetos práticos e transformando aprendizado em portfólio real.
+            </p>
+
+            <div className="mt-8 flex flex-wrap gap-4">
+              <a
+                href="#projetos"
+                className="rounded-2xl bg-white px-6 py-3 font-medium text-zinc-900 transition hover:scale-[1.02]"
+              >
+                Ver projetos
+              </a>
+              <a
+                href="#contato"
+                className="rounded-2xl border border-zinc-700 px-6 py-3 font-medium text-zinc-100 transition hover:bg-zinc-900"
+              >
+                Entrar em contato
+              </a>
+            </div>
+          </div>
+
+          <div className="rounded-3xl border border-zinc-800 bg-gradient-to-br from-zinc-900 to-zinc-950 p-8 shadow-2xl">
+            <div className="mb-6 flex items-center gap-3">
+              <div className="h-3 w-3 rounded-full bg-red-400" />
+              <div className="h-3 w-3 rounded-full bg-yellow-400" />
+              <div className="h-3 w-3 rounded-full bg-green-400" />
+            </div>
+            <div className="space-y-4 font-mono text-sm text-zinc-300">
+              <p>
+                <span className="text-zinc-500">&gt;</span> nome = <span className="text-green-400">"Ângelo Daher"</span>
+              </p>
+              <p>
+                <span className="text-zinc-500">&gt;</span> foco = <span className="text-green-400">"Backend"</span>
+              </p>
+              <p>
+                <span className="text-zinc-500">&gt;</span> estudando = <span className="text-green-400">["Python", "APIs", "Projetos reais"]</span>
+              </p>
+              <p>
+                <span className="text-zinc-500">&gt;</span> objetivo = <span className="text-green-400">"Criar soluções úteis e viver de tecnologia"</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-16" id="sobre">
+        <div className="grid gap-8 md:grid-cols-2">
+          <div className="rounded-3xl border border-zinc-800 bg-zinc-900 p-8 shadow-lg">
+            <h2 className="text-2xl font-semibold">Sobre mim</h2>
+            <p className="mt-4 leading-7 text-zinc-400">
+              Estou evoluindo na área de desenvolvimento passo a passo, com foco em aprender
+              de forma prática. Meu objetivo é construir projetos reais, fortalecer minha base
+              em backend e transformar estudo em oportunidade profissional.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-zinc-800 bg-zinc-900 p-8 shadow-lg">
+            <h2 className="text-2xl font-semibold">Tecnologias em estudo</h2>
+            <div className="mt-5 flex flex-wrap gap-3">
+              {techs.map((tech) => (
+                <span
+                  key={tech}
+                  className="rounded-full border border-zinc-700 bg-zinc-950 px-4 py-2 text-sm text-zinc-300"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-16" id="projetos">
+        <div className="mb-8">
+          <h2 className="text-3xl font-semibold">Projetos</h2>
+          <p className="mt-2 text-zinc-400">Algumas coisas que estou construindo na prática.</p>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-3">
+          {projetos.map((projeto) => (
+            <article
+              key={projeto.titulo}
+              className="rounded-3xl border border-zinc-800 bg-zinc-900 p-6 shadow-lg transition hover:-translate-y-1"
+            >
+              <div className="mb-4 inline-flex rounded-full border border-zinc-700 bg-zinc-950 px-3 py-1 text-xs text-zinc-400">
+                {projeto.status}
+              </div>
+              <h3 className="text-xl font-semibold">{projeto.titulo}</h3>
+              <p className="mt-3 leading-7 text-zinc-400">{projeto.desc}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-16" id="contato">
+        <div className="rounded-[2rem] border border-zinc-800 bg-zinc-900 p-8 shadow-xl md:p-10">
+          <h2 className="text-3xl font-semibold">Contato</h2>
+          <p className="mt-3 max-w-2xl text-zinc-400">
+            Quer acompanhar minha evolução, ver meus projetos ou trocar uma ideia sobre tecnologia?
+            Me chama nos canais abaixo.
+          </p>
+
+          <div className="mt-8 grid gap-4 md:grid-cols-3">
+            <div className="rounded-2xl border border-zinc-800 bg-zinc-950 p-5">
+              <p className="text-sm text-zinc-500">GitHub</p>
+              <p className="mt-2 font-medium">github.com/seuusuario</p>
+            </div>
+            <div className="rounded-2xl border border-zinc-800 bg-zinc-950 p-5">
+              <p className="text-sm text-zinc-500">Instagram</p>
+              <p className="mt-2 font-medium">@seuinstagram</p>
+            </div>
+            <div className="rounded-2xl border border-zinc-800 bg-zinc-950 p-5">
+              <p className="text-sm text-zinc-500">Email</p>
+              <p className="mt-2 font-medium">seuemail@email.com</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}
