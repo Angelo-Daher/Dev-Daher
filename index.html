@@ -5,8 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ângelo Daher</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
 </head>
-<body class="min-h-screen bg-zinc-950 text-zinc-100">
+<body class="scroll-smooth min-h-screen bg-zinc-950 text-zinc-100">
   <main>
     <section class="mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-6 py-16">
       <div class="mb-6 inline-flex w-fit items-center rounded-full border border-zinc-800 bg-zinc-900 px-4 py-2 text-sm text-zinc-300 shadow-sm">
@@ -139,22 +144,76 @@
           Me chama nos canais abaixo.
         </p>
 
-        <div class="mt-8 grid gap-4 md:grid-cols-3">
+        <div class="mt-8 grid grid-cols-4 gap-4">
           <div class="rounded-2xl border border-zinc-800 bg-zinc-950 p-5">
             <p class="text-sm text-zinc-500">GitHub</p>
-            <p class="mt-2 font-medium">https://github.com/Angelo-Daher</p>
+            <a href="https://github.com/Angelo-Daher" target="_blank"
+class="mt-2 block font-medium hover:underline">
+  github.com/Angelo-Daher
+</a>
           </div>
           <div class="rounded-2xl border border-zinc-800 bg-zinc-950 p-5">
             <p class="text-sm text-zinc-500">Instagram</p>
-            <p class="mt-2 font-medium">@daherxzt</p>
+            <a href="https://instagram.com/daherxzt" target="_blank"
+class="mt-2 block font-medium hover:underline">
+  @daherxzt
+</a>
           </div>
           <div class="rounded-2xl border border-zinc-800 bg-zinc-950 p-5">
             <p class="text-sm text-zinc-500">Email</p>
-            <p class="mt-2 font-medium">angelogabrielangelo890@gmail.com</p>
+            <a href="mailto:angelogabrielangelo890@gmail.com"
+class="mt-2 block font-medium break-all hover:underline">
+  angelogabrielangelo890@gmail.com
+            </a>
+          </div>
+
+          <div class="rounded-2xl border border-zinc-800 bg-zinc-950 p-5">
+  <p class="text-sm text-zinc-500">WhatsApp</p>
+
+             <a href="https://wa.me/5561994030706" target="_blank"
+  class="mt-2 block font-medium hover:underline">
+    (61) 99403-0706
+          </a>
+         </div>
           </div>
         </div>
       </div>
     </section>
   </main>
+  <script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const target = document.querySelector(this.getAttribute("href"));
+      const start = window.scrollY;
+      const end = target.offsetTop;
+      const distance = end - start;
+      const duration = 400; // ⬅️ AQUI você controla a velocidade
+
+      let startTime = null;
+
+      function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const progress = timeElapsed / duration;
+
+        window.scrollTo(0, start + distance * ease(progress));
+
+        if (timeElapsed < duration) {
+          requestAnimationFrame(animation);
+        }
+      }
+
+      function ease(t) {
+        return t < 0.5
+          ? 2 * t * t
+          : 1 - Math.pow(-2 * t + 2, 2) / 2;
+      }
+
+      requestAnimationFrame(animation);
+    });
+  });
+</script>
 </body>
 </html>
