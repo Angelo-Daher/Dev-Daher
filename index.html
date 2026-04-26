@@ -1,291 +1,271 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Angelo Daher | Desenvolvedor Fullstack em formação</title>
-  <meta name="description"
-    content="Portfólio de Angelo Daher, desenvolvedor em formação. Veja meus projetos, contatos e redes sociais.">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
+
+  <meta name="description" content="Portfólio de Angelo Daher, desenvolvedor em formação. Veja meus projetos, contatos e redes sociais.">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="scroll-smooth min-h-screen bg-zinc-950 text-zinc-100">
+<body>
+  <body>
+
+  <header class="header">
+    <nav class="nav container">
+      <a href="#" class="logo">Daher Tech • TECHNOLOGY</a>
+
+      <div class="nav-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Soluções</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </nav>
+  </header>
 
   <main>
-    <section class="mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-6 py-16">
-      <div
-        class="mb-6 inline-flex w-fit items-center rounded-full border border-zinc-800 bg-zinc-900 px-4 py-2 text-sm text-zinc-300 shadow-sm">
-        Soluções digitais • Web & Automação
-      </div>
 
-      <div class="grid items-center gap-12 md:grid-cols-2">
-        <div>
-          <h1 class="text-4xl font-bold leading-tight md:text-6xl">
-            Ângelo Daher
-          </h1>
-          <p class="mt-4 max-w-xl text-lg text-zinc-400 md:text-xl">
+    <section class="hero">
+      <div class="container hero-container">
+
+        <div class="hero-content">
+          <span class="badge">Soluções digitais • Web & Automação</span>
+
+          <h1>Ângelo Daher</h1>
+
+          <p>
             Desenvolvo sites modernos e automatizações que ajudam empresas a terem presença online com sites rápidos,
             profissionais e soluções automatizadas.
           </p>
 
-          <div class="mt-8 flex flex-wrap gap-4 ">
-            <a href="#projetos"
-              class="rounded-2xl bg-white px-6 py-3 font-medium text-zinc-900 transition hover:scale-[1.02] hover:border-zinc-600 transition hover:-translate-y-1 transition-transform duration-300">
-              Ver soluções
+          <div class="hero-buttons">
+            <a href="#projetos" class="btn btn-primary">Ver soluções</a>
+            <a href="#contato" class="btn btn-secondary">Entrar em contato</a>
+          </div>
+
+          <div class="social-icons">
+            <a href="https://wa.me/5561994030706" target="_blank">
+              <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
             </a>
-            <a href="#contato"
-              class="rounded-2xl border border-zinc-700 px-6 py-3 font-medium text-zinc-100 transition hover:bg-zinc-900 hover:border-zinc-600 transition hover:-translate-y-1 transition-transform duration-300">
-              Entrar em contato
+
+            <a href="https://instagram.com/daherxzt" target="_blank">
+              <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram">
             </a>
-            <div class="mt-2 grid grid-cols-3 gap-3">
 
-              <div style="display: flex; gap: 15px; justify-content: center; width: 100%  ;">
+            <a href="https://www.linkedin.com/in/%C3%A2ngelo-gabriel-28a14a200/" target="_blank">
+              <img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn">
+            </a>
 
-                <a href="https://wa.me/SEUNUMERO" target="_blank">
-                  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="45">
-                </a>
+            <a href="https://github.com/Angelo-Daher" target="_blank">
+              <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+            </a>
 
-                <a href="https://instagram.com/SEUUSUARIO" target="_blank">
-                  <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" width="45">
-                </a>
-
-                <a href="https://linkedin.com/in/SEUUSUARIO" target="_blank">
-                  <img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" width="45">
-                </a>
-
-                <a href="https://github.com/SEUUSUARIO" target="_blank">
-                  <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="45">
-                </a>
-
-                <a href="https://www.tiktok.com/@SEUUSUARIO" target="_blank">
-                  <img src="https://cdn-icons-png.flaticon.com/512/3046/3046126.png" width="45">
-                </a>
-
-              </div>
-
-            </div>
+            <a href="https://www.tiktok.com/@daherxzt" target="_blank">
+              <img src="https://cdn-icons-png.flaticon.com/512/3046/3046126.png" alt="TikTok">
+            </a>
           </div>
         </div>
 
-        <div class="rounded-3xl border border-zinc-800 bg-gradient-to-br from-zinc-900 to-zinc-950 p-8 shadow-2xl">
-          <div class="mb-6 flex items-center gap-3">
-            <div class="h-3 w-3 rounded-full bg-red-400"></div>
-            <div class="h-3 w-3 rounded-full bg-yellow-400"></div>
-            <div class="h-3 w-3 rounded-full bg-green-400"></div>
+        <div class="code-card">
+          <div class="window-dots">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
           </div>
-          <div class="space-y-4 font-mono text-sm text-zinc-300">
-            <p>
-              <span class="text-zinc-500">&gt;</span> nome =
-              <span class="text-green-400">"Ângelo Daher"</span>
-            </p>
-            <p>
-              <span class="text-zinc-500">&gt;</span> foco =
-              <span class="text-green-400">"Fullstack"</span>
-            </p>
-            <p>
-              <span class="text-zinc-500">&gt;</span> desenvolvendo =
-              <span class="text-green-400">["Python", "JavaScript" "APIs", "Arquitetura de Sistemas"]</span>
-            </p>
-            <p>
-              <span class="text-zinc-500">&gt;</span> objetivo =
-              <span class="text-green-400">"Criar soluções escaláveis e evoluir em tecnologia"</span>
-            </p>
+
+          <div class="code-lines">
+            <p><span>&gt;</span> nome = <strong>"Ângelo Daher"</strong></p>
+            <p><span>&gt;</span> foco = <strong>"Fullstack"</strong></p>
+            <p><span>&gt;</span> desenvolvendo = <strong>["Python", "JavaScript", "APIs", "Arquitetura de Sistemas"]</strong></p>
+            <p><span>&gt;</span> objetivo = <strong>"Criar soluções escaláveis e evoluir em tecnologia"</strong></p>
           </div>
         </div>
+
       </div>
     </section>
 
-    <section class="mx-auto max-w-6xl px-6 py-16" id="sobre">
-      <div class="grid gap-8 md:grid-cols-2">
-        <div class="rounded-3xl border border-zinc-800 bg-zinc-900 p-8 shadow-lg">
-          <h2 class="text-2xl font-semibold items-center justify-center text-center">Como posso ajudar sua empresa?</h2>
-          <p class="mt-4 leading-7 text-zinc-400 items-center justify-center text-center">
+    <section class="about" id="sobre">
+      <div class="container about-grid">
+
+        <div class="info-card">
+          <h2>Como posso ajudar sua empresa?</h2>
+          <p>
             Desenvolvo soluções digitais focadas em organização, automação e eficiência para empresas. Meu trabalho é
             criar sistemas, sites e integrações que facilitam o dia a dia, reduzem tarefas manuais e melhoram a forma
             como o negócio funciona internamente. Sempre entregando soluções simples, funcionais e adaptadas à
             realidade de cada empresa.
+          </p>
         </div>
 
-        <div class="rounded-3xl border border-zinc-800 bg-zinc-900 p-8 shadow-lg">
-          <h2 class="text-2xl font-semibold items-center justify-center text-center">Soluções digitais</h2>
-          <div class="mt-5 flex flex-wrap gap-3 items-center justify-center text-center">
-            <span class="rounded-full border border-zinc-700 bg-zinc-950 px-4 py-2 text-sm text-zinc-300">Sites
-              modernos</span>
-            <span class="rounded-full border border-zinc-700 bg-zinc-950 px-4 py-2 text-sm text-zinc-300">Presença
-              profissional</span>
-            <span class="rounded-full border border-zinc-700 bg-zinc-950 px-4 py-2 text-sm text-zinc-300">Integrações
-              com WhatsApp</span>
-            <span
-              class="rounded-full border border-zinc-700 bg-zinc-950 px-4 py-2 text-sm text-zinc-300">Automatizações</span>
-            <span class="rounded-full border border-zinc-700 bg-zinc-950 px-4 py-2 text-sm text-zinc-300">Landing
-              Pages</span>
-            <span class="rounded-full border border-zinc-700 bg-zinc-950 px-4 py-2 text-sm text-zinc-300">Sistemas
-              personalizados</span>
-            <span class="rounded-full border border-zinc-700 bg-zinc-950 px-4 py-2 text-sm text-zinc-300">Consultoria
-              Digital</span>
-            <span class="rounded-full border border-zinc-700 bg-zinc-950 px-4 py-2 text-sm text-zinc-300">Suporte e
-              Manutenção</span>
+        <div class="info-card">
+          <h2>Soluções digitais</h2>
+
+          <div class="tags">
+            <span>Sites modernos</span>
+            <span>Presença profissional</span>
+            <span>Integrações com WhatsApp</span>
+            <span>Automatizações</span>
+            <span>Landing Pages</span>
+            <span>Sistemas personalizados</span>
+            <span>Consultoria Digital</span>
+            <span>Suporte e Manutenção</span>
           </div>
         </div>
+
       </div>
     </section>
 
-    <section class="mx-auto max-w-6xl px-6 py-16" id="projetos">
-      <div class="mb-8">
-        <h2 class="text-3xl font-semibold">Exemplos de soluções</h2>
-        <p class="mt-2 text-zinc-400">Soluções desenvolvidas para otimizar processos e melhorar a presença digital de
-          empresas.</p>
-      </div>
+    <section class="projects" id="projetos">
+      <div class="container">
 
-      <div class="grid gap-6 md:grid-cols-3">
-        <article class="rounded-3xl border border-zinc-800 bg-zinc-900 p-6 shadow-lg transition hover:-translate-y-1">
-          <div class="mb-4 inline-flex rounded-full border border-zinc-700 bg-zinc-950 px-3 py-1 text-xs text-zinc-400">
-            Criação web
-          </div>
-          <h3 class="text-xl font-semibold">Criação de Sites Profissionais</h3>
-          <p class="mt-3 leading-7 text-zinc-400">
-            Desenvolvimento de sites modernos, rápidos e responsivos para empresas que desejam presença digital
-            profissional.
+        <div class="section-title">
+          <h2>Exemplos de soluções</h2>
+          <p>
+            Soluções desenvolvidas para otimizar processos e melhorar a presença digital de empresas.
           </p>
-        </article>
+        </div>
 
-        <article class="rounded-3xl border border-zinc-800 bg-zinc-900 p-6 shadow-lg transition hover:-translate-y-1">
-          <div class="mb-4 inline-flex rounded-full border border-zinc-700 bg-zinc-950 px-3 py-1 text-xs text-zinc-400">
-            Automação
-          </div>
-          <h3 class="text-xl font-semibold">Automação de Atendimento</h3>
-          <p class="mt-3 leading-7 text-zinc-400">
-            Integração com WhatsApp e automações para facilitar o contato com clientes e agilizar processos.
-          </p>
-        </article>
+        <div class="solutions-grid">
+          <article class="solution-card">
+            <span>Criação web</span>
+            <h3>Criação de Sites Profissionais</h3>
+            <p>
+              Desenvolvimento de sites modernos, rápidos e responsivos para empresas que desejam presença digital
+              profissional.
+            </p>
+          </article>
 
-        <article class="rounded-3xl border border-zinc-800 bg-zinc-900 p-6 shadow-lg transition hover:-translate-y-1">
-          <div class="mb-4 inline-flex rounded-full border border-zinc-700 bg-zinc-950 px-3 py-1 text-xs text-zinc-400">
-            Implementação
-          </div>
-          <h3 class="text-xl font-semibold">Sistemas Personalizados</h3>
-          <p class="mt-3 leading-7 text-zinc-400">
-            Criação de soluções sob medida para organizar processos internos e melhorar a eficiência do negócio.
-          </p>
-        </article>
-      </div>
-    </section>
+          <article class="solution-card">
+            <span>Automação</span>
+            <h3>Automação de Atendimento</h3>
+            <p>
+              Integração com WhatsApp e automações para facilitar o contato com clientes e agilizar processos.
+            </p>
+          </article>
 
-    <section class="mx-auto max-w-6xl px-6 py-16" id="contato">
-      <div class="rounded-[2rem] border border-zinc-800 bg-zinc-900 p-8 shadow-xl md:p-10">
-        <h2 class="text-3xl font-semibold">Contato</h2>
-        <p class="mt-3 max-w-2xl text-zinc-400">
-          Precisa de um site ou quer automatizar algum processo da sua empresa?
-          Me chama que eu te mostro uma solução simples e direta para o seu caso.
-          Atendimento rápido • Sem compromisso
-        </p>
-        <form action="https://formspree.io/f/xyklblpa" method="POST" class="mt-8 space-y-4">
+          <article class="solution-card">
+            <span>Implementação</span>
+            <h3>Sistemas Personalizados</h3>
+            <p>
+              Criação de soluções sob medida para organizar processos internos e melhorar a eficiência do negócio.
+            </p>
+          </article>
+        </div>
 
-          <input type="text" name="nome" placeholder="Seu nome" required
-            class="w-full rounded-xl border border-zinc-700 bg-zinc-950 px-4 py-3 text-zinc-100">
+        <div class="portfolio-title">
+          <h2>Projetos desenvolvidos</h2>
+          <p>Projetos reais criados com foco em solução, presença digital e conversão.</p>
+        </div>
 
-          <input type="tel" name="telefone" placeholder="Seu telefone" required
-            class="w-full rounded-xl border border-zinc-700 bg-zinc-950 px-4 py-3 text-zinc-100">
+        <div class="portfolio-grid">
+          <article class="project-card">
+            <div class="project-header">
+              <span>Landing Page</span>
+            </div>
 
-          <textarea name="mensagem" placeholder="Descreva o que você precisa (site, automação, etc)" required
-            class="w-full rounded-xl border border-zinc-700 bg-zinc-950 px-4 py-3 text-zinc-100 h-32"></textarea>
+            <h3>Leila’s Hair Studio</h3>
 
-          <button type="submit"
-            class="w-full rounded-xl bg-white px-6 py-3 font-medium text-zinc-900 hover:scale-[1.02] transition">
-            Enviar contato
-          </button>
-
-        </form>
-
-        <div class="mt-7 grid grid-cols-2 sm:grid-cols-3 gap-4">
-          <div
-            class="rounded-2xl border border-zinc-800 bg-zinc-950 p-3 sm:p-5 flex flex-col items-center justify-center text-center hover:border-zinc-600 transition hover:-translate-y-1 transition-transform duration-300">
-            <a href="https://github.com/Angelo-Daher" target="_blank">
-              <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="20">
-            </a>
-            <p class="text-xs sm:text-sm text-zinc-500">GitHub</p>
-            <a href="https://github.com/Angelo-Daher" target="_blank"
-              class="mt-2 block text-xs sm:text-sm font-medium hover:underline">
-              github.com/Angelo-Daher
-            </a>
-          </div>
-          <div
-            class="rounded-2xl border border-zinc-800 bg-zinc-950 p-3 sm:p-5 flex flex-col items-center justify-center text-center hover:border-zinc-600 transition hover:-translate-y-1 transition-transform duration-300">
-            <a href="https://instagram.com/daherxzt" target="_blank">
-              <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" width="20">
-            </a>
-            <p class="text-xs sm:text-sm text-zinc-500">Instagram</p>
-            <a href="https://instagram.com/@daherxzt" target="_blank"
-              class="mt-2 block text-xs sm:text-sm font-medium break-all hover:underline">
-              @daherxzt
-            </a>
-          </div>
-          <div
-            class="rounded-2xl border border-zinc-800 bg-zinc-950 p-3 sm:p-5 flex flex-col items-center justify-center text-center hover:border-zinc-600 hover:-translate-y-1 transition-transform duration-300">
-
-            <a href="mailto:angelogabrielangelo890@gmail.com">
-              <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" width="20">
-            </a>
-
-            <p class="text-xs sm:text-sm text-zinc-500 mt-2">
-              Email
+            <p>
+              Site desenvolvido para salão de beleza com foco em captação de clientes via WhatsApp e presença digital.
             </p>
 
-            <a href="mailto:angelogabrielangelo890@gmail.com"
-              class="mt-1 block text-xs sm:text-sm font-medium break-words break-all min-w-0 hover:underline">
-              angelogabrielangelo890@gmail.com
-            </a>
+            <ul>
+              <li>Integração com WhatsApp</li>
+              <li>Google Maps e Waze</li>
+              <li>Instagram</li>
+              <li>Layout responsivo</li>
+              <li>Foco em conversão de clientes</li>
+            </ul>
 
-          </div>
-          <div
-            class="rounded-2xl border border-zinc-800 bg-zinc-950 p-3 sm:p-5 flex flex-col items-center justify-center text-center hover:border-zinc-600 transition hover:-translate-y-1 transition-transform duration-300">
-            <a href="https://wa.me/5561994030706" target="_blank">
-              <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="20">
+            <a href="https://salao-saas.vercel.app/" target="_blank" class="project-link">
+              Ver projeto
             </a>
-            <p class="text-xs sm:text-sm text-zinc-500">WhatsApp</p>
+          </article>
+        </div>
 
-            <a href="https://wa.me/5561994030706" target="_blank"
-              class="mt-2 block text-xs sm:text-sm font-medium hover:underline">
-              (61) 99403-0706
-            </a>
+      </div>
+    </section>
 
-          </div>
-          <div
-            class="rounded-2xl border border-zinc-800 bg-zinc-950 p-3 sm:p-5 flex flex-col items-center justify-center text-center hover:border-zinc-600 transition hover:-translate-y-1 transition-transform duration-300 ">
-            <a href="https://www.tiktok.com/@daherxzt" target="_blank">
-              <img src="https://cdn-icons-png.flaticon.com/512/3046/3046126.png" width="20">
-            </a>
-            <p class="text-xs sm:text-sm text-zinc-500">TikTok</p>
-            </a>
-            <a href="https://www.tiktok.com/@daherxzt" target="_blank"
-              class="mt-2 block text-xs sm:text-sm font-medium hover:underline">
-              @daherxzt
-            </a>
+    <section class="contact" id="contato">
+      <div class="container">
 
-          </div>
-          <div
-            class="rounded-2xl border border-zinc-800 bg-zinc-950 p-3 sm:p-5 flex flex-col items-center justify-center text-center hover:border-zinc-600 transition hover:-translate-y-1 transition-transform duration-300 ">
-            <a href="https://linkedin.com/in/%C3%A2ngelo-gabriel-28a14a200/" target="_blank">
-              <img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" width="20">
-            </a>
-            <p class="text-xs sm:text-sm text-zinc-500">Linkedin</p>
-            </a>
-            <a href="https://www.linkedin.com/in/%C3%A2ngelo-gabriel-28a14a200/" target="_blank"
-              class="mt-2 block text-xs sm:text-sm font-medium hover:underline">
-              @Ângelo Daher
-            </a>
+        <div class="contact-card">
+          <h2>Contato</h2>
+
+          <p>
+            Precisa de um site ou quer automatizar algum processo da sua empresa?
+            Me chama que eu te mostro uma solução simples e direta para o seu caso.
+            Atendimento rápido • Sem compromisso
+          </p>
+
+          <form action="https://formspree.io/f/xyklblpa" method="POST" class="contact-form">
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <input type="tel" name="telefone" placeholder="Seu telefone" required>
+            <textarea name="mensagem" placeholder="Descreva o que você precisa (site, automação, etc)" required></textarea>
+
+            <button type="submit">Enviar contato</button>
+          </form>
+
+          <div class="contact-links">
+
+            <div class="contact-item">
+              <a href="https://github.com/Angelo-Daher" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+              </a>
+              <p>GitHub</p>
+              <a href="https://github.com/Angelo-Daher" target="_blank">github.com/Angelo-Daher</a>
+            </div>
+
+            <div class="contact-item">
+              <a href="https://instagram.com/daherxzt" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram">
+              </a>
+              <p>Instagram</p>
+              <a href="https://instagram.com/daherxzt" target="_blank">@daherxzt</a>
+            </div>
+
+            <div class="contact-item">
+              <a href="mailto:angelogabrielangelo890@gmail.com">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+              </a>
+              <p>Email</p>
+              <a href="mailto:angelogabrielangelo890@gmail.com">angelogabrielangelo890@gmail.com</a>
+            </div>
+
+            <div class="contact-item">
+              <a href="https://wa.me/5561994030706" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+              </a>
+              <p>WhatsApp</p>
+              <a href="https://wa.me/5561994030706" target="_blank">(61) 99403-0706</a>
+            </div>
+
+            <div class="contact-item">
+              <a href="https://www.tiktok.com/@daherxzt" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/3046/3046126.png" alt="TikTok">
+              </a>
+              <p>TikTok</p>
+              <a href="https://www.tiktok.com/@daherxzt" target="_blank">@daherxzt</a>
+            </div>
+
+            <div class="contact-item">
+              <a href="https://www.linkedin.com/in/%C3%A2ngelo-gabriel-28a14a200/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn">
+              </a>
+              <p>LinkedIn</p>
+              <a href="https://www.linkedin.com/in/%C3%A2ngelo-gabriel-28a14a200/" target="_blank">@Ângelo Daher</a>
+            </div>
 
           </div>
         </div>
+
       </div>
     </section>
+
   </main>
 </body>
-
 </html>
